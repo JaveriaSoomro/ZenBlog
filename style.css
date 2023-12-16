@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Libre+Baskerville&family=Nunito:wght@300&display=swap');
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-bg-color: #f2f2f2;
+    --secondary-bg-color: #f5ebeb;
+    --drkish-bg-color: #363535;
+    --dark-bg-color: #2e2d2d;
+    --text-color: #000;
+    --heading-font:'EB Garamond', serif;
+    --paragraph-font:Arial;
+}
+/* Utility Classes */
+body{
+    color: #000;
+    background-color: var(--primary-bg-color);
+}
+.container{
+    max-width: 90%;
+    margin: auto;
+}
+h1{
+    font-family:var(--heading-font);
+    font-size: 26px;
+    font-weight: 700;
+}
+h2{
+    font-family: var(--heading-font);
+    font-size: 30px; 
+}
+h3{
+    font-family: var(--heading-font);
+    font-size: 20px;  
+    font-weight:500;
+}
+p{
+   font-family: var(--paragraph-font);
+   font-size: 14px;
+   font-weight:lighter;
+   color: #534e4e;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+ul{
+    list-style: none;
+    gap: 20px;
+}
+.position-absolute{
+    z-index: 2; 
+    position: absolute;
+    padding: 20px;
+    margin-inline: 30px;
+}
+.text-wrap{
+    text-wrap: wrap;
+}
+.date{
+    color: #7c7b7b;
+    font-weight: 200;
+    font-size:small;
+    padding-block:15px ;
+}
+.date-2{
+    color: #7c7b7b;
+    font-weight: 200;
+    font-size:small;
+    padding-block:5px ;
+}
+.column-border{
+    border-right: 1.2px solid #d6c8c8;
+}
+.underline{
+    border-bottom: 2.5px solid #000;
+    margin-block: 50px;
+}
+.pointer{
+    cursor: pointer;
+}
+/* Nav-bar CSS */
+.nav-bar{
+    justify-content: space-between;
+    background-color: var(--secondary-bg-color);
+    padding-block: 20px;
+}
+.nav-icons{
+    gap: 15px;
+}
+.list-items a{
+    color: #000;
+    transition: all 0.1s ease-in;
+}
+.list-items a:hover{
+    color: var(--drkish-bg-color);
+}
+/* main */
+.front{
+    margin-block: 20px;
+}
+.front p{
+    color: #f2f2f2;
+}
+.front-image{
+    width:100%;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://cdn.pixabay.com/photo/2023/12/07/15/15/hyacinths-8435741_1280.jpg');
+    background-position: center center;
+}
+.front-heading{
+    top: 22rem;
+    color: var(--secondary-bg-color);
+    width: 50%
+}
+.front-text{
+    top: 28rem;
+    color: var(--secondary-bg-color);
+    width: 50%
+}
+/* trending news */
+.trending{
+    margin-block: 50px;
+    align-items: flex-start;
+}
+.trending-image img{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid transparent;
+}
+.trending-main-news{
+    flex-basis: 40%;
+}
+.trending-main-para p{
+    padding-block: 20px;
+    padding-inline-end: 40px;
+    color: var(--dark-bg-color);
+    line-height: 1.4rem;
+}
+
+.news{
+    flex-basis: 20%;
+    padding-inline:10px;
+}
+.news h3{
+    padding-block: 10px;
+}
+.trending-main-image img{
+    width: 339px;
+    height: 215px;
+}
+
+/* Culture News */
+.cultures{
+    justify-content: space-between;
+}
+.culture{
+    justify-content: space-between;
+}
+.culture h3{
+    font-weight:400;
+}
+.culture-news{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#culture-1{
+    flex-basis: 70%;
+}
+#culture-2{
+    flex-basis: 30%;
+}
+.culture-img img{
+    width: 60%;
+    height: 30%;
+    object-fit: contain;
+    margin: 10px;
+    padding: 10px;
+}
+.culture-img p{
+    padding: 10px;
+}
+.sub-culture{
+    align-items: flex-start;
+    padding: 20px;
+}
+#sub-culture-1{
+    flex-basis: 30%;
+}
+#sub-culture-2{
+    flex-basis: 70%;
+}
+#sub-culture-2-img{
+    padding: 10px;
+}
+#sub-culture-2-img img{
+    width: 100%;
+    height: 40%;
+}
+#sub-culture-img img{
+    width: 100%;
+    height: 20%;
+    margin-top: 20px;
+}
+.text{
+    margin-block-end: 60px;
+}
+
+
+/* Business News */
+.business-flex{
+    justify-content: space-between;
+}
+.business{
+    justify-content: space-between;
+}
+.business h3{
+    font-weight:400;
+}
+.business-news{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#business-1{
+    flex-basis: 70%;
+}
+#business-2{
+    flex-basis: 30%;
+}
+.business-img img{
+    width: 60%;
+    height: 30%;
+    object-fit: contain;
+    margin: 10px;
+    padding: 10px;
+}
+.business-img p{
+    padding: 10px;
+}
+.sub-business{
+    align-items: flex-start;
+    padding: 20px;
+}
+#sub-business-1{
+    flex-basis: 30%;
+}
+#sub-business-2{
+    flex-basis: 70%;
+}
+#sub-business-2-img{
+    padding: 10px;
+}
+#sub-business-2-img img{
+    width: 100%;
+    height: 40%;
+}
+#sub-business-img img{
+    width: 100%;
+    height: 20%;
+    margin-top: 20px;
+}
+.text{
+    margin-block-end: 5px;
+}
+
+/* Lifestyle News */
+.lifestyle-flex{
+    justify-content: space-between;
+}
+.lifestyle{
+    justify-content: space-between;
+}
+
+/* Footer */
+.footer{
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: var(--drkish-bg-color);
+    padding: 20px;
+    color: #fff;
+}
+.footer-item{
+    flex-basis: 25%;
+}
+.about-zenblog-heading p , a{
+    color: #fff;
+    line-height: 1rem;
+}
+.recent-image img{
+width: 80px;
+height: 50px;
+}
+.recent-post-items{
+    justify-content: flex-start;
+}
+.footer-text{
+    padding: 10px;
+}
+.footer-text p{
+  font-size: 11px;
+}
+.footer-text h3{
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+.footer-item ul li{
+    padding: 4px;
+    margin-block: 10px;
+}
+.about-zenblog-heading{
+ margin: 10px;
+ padding: 5px;
+}
+.about-zenblog-heading h3{
+    margin-bottom: 10px;
+}
+.about-zenblog-heading p{
+    margin-bottom: 10px;
+}
+
+/* Sub Footer */
+.sub-footer{
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--dark-bg-color);
+}
+.sub-footer h3{
+    color: #fff;
+}
+.icon{
+    padding-inline: 8px;
+    color: #fff;
+    margin: 10px;
+}
+
