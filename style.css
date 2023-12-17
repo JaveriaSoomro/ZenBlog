@@ -158,6 +158,10 @@ ul{
 .trending-main-news{
     flex-basis: 40%;
 }
+.trending-main-heading h1{
+    color: var(--text-color);
+    line-height: 2rem;
+}
 .trending-main-para p{
     padding-block: 20px;
     padding-inline-end: 40px;
