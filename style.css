@@ -42,7 +42,7 @@ p{
    font-family: var(--paragraph-font);
    font-size: 14px;
    font-weight:lighter;
-   color: #534e4e;
+   color: var(--text-color);
 }
 .flex{
     display: flex;
@@ -124,12 +124,14 @@ ul{
 .front-image{
     width:100%;
     height: 500px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://basttlautoindia.com/assets/img/CarBlog.png');
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://cdn.pixabay.com/photo/2015/03/11/12/31/buildings-668616_1280.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     align-items: center;
 }
 .front-image:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://basttlautoindia.com/assets/img/CarBlog.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://cdn.pixabay.com/photo/2015/03/11/12/31/buildings-668616_1280.jpg');
 } 
 .front-heading{
     top: 13rem;
